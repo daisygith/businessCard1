@@ -49,6 +49,19 @@ html {
         border-color: #6e6d6d;
     }
 }
+
+@keyframes card-ani100 {
+    0% {
+        opacity: 0;
+        transform: translateX(0px) translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px) translateY(0px);
+        color: white;
+        border-color: white;
+    }
+}
 .container .card {
     width: 308px;
     height: 308px;
@@ -66,7 +79,9 @@ html {
     animation: card-ani2 1s;
     animation-delay: 0s;
     animation-fill-mode: forwards;
+    /*visibility: hidden;*/
 }
+
 .container .card hr {
     border: 0;
     height: 1px;
@@ -78,8 +93,10 @@ html {
 .container .card .title {
     font-size: 14px;
     animation: card-ani2 1s;
-    animation-delay: 0.3s;
+    /*animation-delay: 0.3s;*/
     animation-fill-mode: forwards;
+    position: relative;
+    z-index: 1;
 }
 
 .container .card .media {
@@ -90,6 +107,17 @@ html {
     /*width: 90px;*/
     z-index: 1;
     animation: card-ani2 1s;
+    animation-delay: 0.4s;
+    animation-fill-mode: forwards;
+}
+.container .card .media2 {
+    font-size: 14px;
+    margin: 242px auto 6px 160px;
+    position: relative;
+    bottom: 4rem;
+    /*width: 90px;*/
+    z-index: 1;
+    animation: card-ani100 1s;
     animation-delay: 0.4s;
     animation-fill-mode: forwards;
 }
@@ -108,6 +136,25 @@ html {
     color: white;
     z-index: 1;
     animation: card-ani2 1s;
+    animation-delay: 0.4s;
+    animation-fill-mode: forwards;
+    text-decoration: none;
+}
+
+.media2 a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: .1rem solid white;
+    border-radius: 50%;
+    font-size: 20px;
+    color: white;
+    z-index: 1;
+    animation: card-ani100 1s;
     animation-delay: 0.4s;
     animation-fill-mode: forwards;
     text-decoration: none;
@@ -139,6 +186,14 @@ html {
     transition-delay: 10s;
 }
 
+
+.card-button-cooperation .cooperation-text {
+    transform: rotate(90deg);
+    padding: 0px 36px 0px 8px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
 @keyframes card-ani4 {
     0% {
         opacity: 0;
@@ -154,7 +209,7 @@ html {
     height: 308px;
     padding: 30px;
     border-radius: 10px;
-    margin: -414px 0px 0px -56px;
+    margin: -280px 0px 0px -56px;
     background-color: transparent;
     border: solid 2px white;
     z-index: -1;
@@ -162,12 +217,54 @@ html {
     animation: card-ani4 1s;
     transition-delay: 6s;
 }
+
+.container .card .card-button-about.active,
+.container .card .card-button-cooperation.active{
+    /*border-right-color: white;*/
+    border-right: 22px solid white;
+    /*animation: card-ani1 0s;*/
+    color: #6e6d6d;
+}
+
+.container .card .card-button-about ,
+.container .card .card-button-cooperation {
+    /*width: 8px;*/
+    /*height: 50px;*/
+    border-bottom: 4px solid transparent;
+    border-top: 4px solid transparent;
+    border-right: 22px solid #218445;
+    height: 90px;
+    padding: 5px 10px 8px 10px;
+    border-radius: 5px;
+    /*background-color: #9d2828;*/
+    /*z-index: -1;*/
+    z-index: 1;
+    position: relative;
+    /*opacity: 0.5;*/
+    animation: card-ani4 0.5s;
+    color: white;
+    /*transition-delay: 10s;*/
+}
+.container .card .card-button-cooperation {
+    margin: -250px 0px 0px 318px;
+}
+.container .card .card-button-about {
+    margin: -320px 0px 0px 318px;
+}
+
+.card-button-about .about-text {
+    transform: rotate(90deg);
+    padding: 0px 21px 0px 23px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
 .container .card .card2 {
     width: 308px;
-    height: 333px;
+    height: 308px;
     padding: 30px;
     border-radius: 10px;
-    margin: -348px auto 0px -30px;
+    margin: -140px auto 0px -30px;
     background-color: transparent;
     overflow: hidden;
     position: relative;
@@ -176,10 +273,10 @@ html {
 }
 .container .card .card2 .card-green {
     width: 308px;
-    height: 333px;
+    height: 328px;
     padding: 30px;
     border-radius: 10px;
-    margin: -79px 0px 0px -56px;
+    margin: -72px 0px 0px -56px;
     background-color: transparent;
     border: solid 2px #218445;
     position: relative;
