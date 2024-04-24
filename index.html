@@ -13,16 +13,31 @@
     <body>
         <div class="container">
             <div class="card">
-                <div class="name">Sylwia Dudek</div>
+                <div id="visibilityName" class="name">Sylwia Dudek</div>
+                <div id="visibilityCooperations" class="name" style="display: none;">Współprace</div>
                 <hr/>
-                <div class="title">Zapraszam do kontaktu.</div>
-                <div class="media">
-                    <a href="https://www.linkedin.com/in/sylwia-dudek-34abab186/"><i class='bx bxl-linkedin'></i></a>
+                <div id="visibilityTitle" class="title">Zapraszam do kontaktu.</div>
+                <div id="visibilityNoneTitle" class="title" style="display: none;">
+                    <a href="https://www.h-tx.pl/">Heating Technix</a>
+                </div>
+                <div id="visibilityMedia" class="media" >
+                    <a href="https://www.linkedin.com/in/sylwia-dudek-34abab186/" ><i class='bx bxl-linkedin'></i></a>
                     <a href="https://github.com/daisygith"><i class='bx bxl-github' ></i></a>
                     <a href="mailto:dudek.sylwia.u@gmail.com"><i class='bx bxl-gmail' ></i></a>
                 </div>
+                <div id="visibilityNoneMedia" class="media2" style="display: none;">
+                    <a><i></i></a>
+                    <a><i></i></a>
+                    <a><i></i></a>
+                </div>
                 <div class="card-back"></div>
+                <div class="card-button-cooperation" id="cooperation">
+                    <div class="cooperation-text">Współprace</div>
+                </div>
                 <div class="card-front"></div>
+                <div class="card-button-about active" id="about">
+                    <div class="about-text">Główna</div>
+                </div>
                 <div class="card2">
                     <div class="card-green"></div>
                 </div>
@@ -36,5 +51,6 @@
         <div class="circle6"></div>
         <div class="circle7"></div>
         <div class="circle8"></div>
+    <script src="script.js"></script>
     </body>
 </html>
