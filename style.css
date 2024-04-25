@@ -17,7 +17,6 @@ html {
 * {
     letter-spacing: 1px;
     font-family: Arial;
-    /*color: white;*/
 }
 
 .container {
@@ -73,13 +72,13 @@ html {
     transition-delay: 1s;
     position: relative;
 }
+
 .container .card .name {
     font-size: 28px;
     margin: 15px auto 0px auto;
     animation: card-ani2 1s;
     animation-delay: 0s;
     animation-fill-mode: forwards;
-    /*visibility: hidden;*/
 }
 
 .container .card hr {
@@ -93,10 +92,16 @@ html {
 .container .card .title {
     font-size: 14px;
     animation: card-ani2 1s;
-    /*animation-delay: 0.3s;*/
     animation-fill-mode: forwards;
     position: relative;
     z-index: 1;
+}
+
+.container .card .title a {
+    color: #6e6d6d;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .container .card .media {
@@ -104,25 +109,24 @@ html {
     margin: 242px auto 6px 160px;
     position: relative;
     bottom: 4rem;
-    /*width: 90px;*/
     z-index: 1;
     animation: card-ani2 1s;
     animation-delay: 0.4s;
     animation-fill-mode: forwards;
 }
+
 .container .card .media2 {
     font-size: 14px;
     margin: 242px auto 6px 160px;
     position: relative;
     bottom: 4rem;
-    /*width: 90px;*/
     z-index: 1;
     animation: card-ani100 1s;
     animation-delay: 0.4s;
     animation-fill-mode: forwards;
 }
 
-.media a {
+.media a, .media2 a {
     position: relative;
     display: inline-flex;
     justify-content: center;
@@ -135,6 +139,9 @@ html {
     font-size: 20px;
     color: white;
     z-index: 1;
+}
+
+.media a {
     animation: card-ani2 1s;
     animation-delay: 0.4s;
     animation-fill-mode: forwards;
@@ -142,18 +149,6 @@ html {
 }
 
 .media2 a {
-    position: relative;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    background: transparent;
-    border: .1rem solid white;
-    border-radius: 50%;
-    font-size: 20px;
-    color: white;
-    z-index: 1;
     animation: card-ani100 1s;
     animation-delay: 0.4s;
     animation-fill-mode: forwards;
@@ -220,30 +215,23 @@ html {
 
 .container .card .card-button-about.active,
 .container .card .card-button-cooperation.active{
-    /*border-right-color: white;*/
     border-right: 22px solid white;
-    /*animation: card-ani1 0s;*/
     color: #6e6d6d;
 }
 
 .container .card .card-button-about ,
 .container .card .card-button-cooperation {
-    /*width: 8px;*/
-    /*height: 50px;*/
+
     border-bottom: 4px solid transparent;
     border-top: 4px solid transparent;
     border-right: 22px solid #218445;
     height: 90px;
     padding: 5px 10px 8px 10px;
     border-radius: 5px;
-    /*background-color: #9d2828;*/
-    /*z-index: -1;*/
     z-index: 1;
     position: relative;
-    /*opacity: 0.5;*/
     animation: card-ani4 0.5s;
     color: white;
-    /*transition-delay: 10s;*/
 }
 .container .card .card-button-cooperation {
     margin: -250px 0px 0px 318px;
