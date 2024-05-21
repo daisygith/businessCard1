@@ -206,7 +206,7 @@ html {
     border-radius: 10px;
     margin: -280px 0px 0px -56px;
     background-color: transparent;
-    border: solid 2px white;
+    border: solid 2px transparent;
     z-index: -1;
     position: relative;
     animation: card-ani4 1s;
@@ -266,7 +266,7 @@ html {
     border-radius: 10px;
     margin: -72px 0px 0px -56px;
     background-color: transparent;
-    border: solid 2px #218445;
+    border: solid 2px transparent;
     position: relative;
 }
 
